@@ -1,0 +1,16 @@
+{
+  "name": "smartnotes",
+  "version": "1.0.0",
+  "description": "Run frontend, backend, and ML server in one command",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n \"frontend,backend,ml\" -c \"blue,green,magenta\" \"npm --prefix notes start\" \"npm --prefix back_server run dev\" \"python back_server/ml/summarizer_api.py\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
