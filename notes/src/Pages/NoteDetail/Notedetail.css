@@ -1,0 +1,108 @@
+.note-detail{
+    height: 60svh;
+    width: 80svw;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 50px;
+}
+.note-textarea{
+    height: max-content;
+    width: 90%;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px -5px grey;
+    padding: 2%;
+    border-radius: 15px;
+}
+.note-title-heading{
+    width: 90%;
+    text-align: end;
+    border-bottom: 2px solid grey;
+}
+
+.editing{
+    position: absolute;
+    right: 10px;
+    height: 15svh;
+    width: 2svw;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 50px;
+    scale: 1.5;
+    background-color: black;
+}
+
+.a{
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+.edit-title {
+    font-size: 3em;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid grey;
+}
+.edit-text,.edit-title{
+    box-shadow: 0px 0px 10px -2px grey;
+    border-radius: 10px;
+}  
+.edit-text {
+    font-size: 16px;
+    padding: 10px;
+    min-height: 400px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    box-shadow: none;
+}
+.edit-text:focus{
+    outline: none;
+}
+.note-btn{
+    padding: 10px 20px 10px 20px;
+    scale: 1.2;
+    font-size: 1.2em;
+    background: linear-gradient(45deg,red,blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border: 2px solid grey;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px 0px grey;
+    transition-duration: 0.5s;
+}
+.note-btn:focus{
+    box-shadow: none;
+    transform: translate(0,-10px);
+    transition-duration: 0.5s;
+}
+
+
+.note-btn2{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    padding: 10px 20px 10px 20px ;
+    border: 2px solid grey;
+    background: linear-gradient(45deg,red,blue);
+    font-size: 1.3em;
+    color: white;
+    transition-duration: 1s;
+    border-radius: 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.note-btn2:hover{
+    box-shadow: 10px 10px 20px -5px black;
+    transition-duration: 1s;
+    cursor: pointer;
+    scale: 1.051;
+}

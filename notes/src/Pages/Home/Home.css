@@ -1,0 +1,74 @@
+.home{
+    background-color: rgba(253, 253, 253, 0.845);
+    height: 90svh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.inner_home{
+    height: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(3, 66, 70);
+    border-radius: 20px;
+    color: aliceblue;
+    background-image: url("../../assets/dots-removebg-preview.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadein 1.5s ;
+    box-shadow: 0px 50px 50px 0px black;
+    transition-duration: 1s;
+}
+.inner_home:hover{
+    box-shadow: 0px 50px 100px 10px rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+@keyframes wiggle {
+    0%{
+        transform: translate(0,-1px);
+    }
+    50%{
+        transform: translate(0,1px);
+    }
+    100%{
+        transform: translate(0,-1px);
+    }
+}
+@keyframes fadein {
+    0%{
+        scale: 0;
+        opacity: 0;
+        border-radius: 0px;
+    }
+    70%{
+        scale: 1.2;
+        opacity: 0.9;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
+.st1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4em;
+    background: linear-gradient(45deg,rgb(0, 145, 255),rgb(64, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.st1,.st2,.st3{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    width: 90%;
+}
+.st2,.st3{
+    font-weight: 200;
+    font-size: 2em;
+    text-align: end;
+}

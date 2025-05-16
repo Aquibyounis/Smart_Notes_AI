@@ -1,0 +1,70 @@
+.Omynotes{
+    height: 90svh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner1{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.inner2{
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+.inner1 h1{
+    background:linear-gradient(45deg,rgb(173, 21, 21),rgb(0, 76, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.inner2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 5%;
+    overflow: hidden;
+}
+
+.box_note{
+    height: 25svh;
+    width: 100%;
+    font-family: monospace;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 50px;
+    padding: 1%;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.box_note:hover{
+    box-shadow: 10px 10px 50px -10px black;
+    transition-duration: 1s;
+}
+.box_note h2{
+    font-size: 3em;
+    text-align: start;
+}
+.box_note h3{
+    font-weight: 400;
+}
+.inner2_p{
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(72, 72, 72);
+}
